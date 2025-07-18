@@ -12,7 +12,7 @@
 
 Welcome to the [**2025 NeurIPS - MyoChallenge: Towards Human Athletic Intelligence**](https://sites.google.com/view/myosuite/myochallenge/myochallenge-2025).
 
-This challenge consists of developing controllers for a physiologically realistic musculoskeletal models to upper and lower limb atheltic tasks:
+This challenge consists of developing controllers for a physiologically realistic musculoskeletal model to achieve upper and lower limb athletic tasks:
 
 - A) **PingPong task** -- Successfully tally a incoming pingpong ball (`myoChallengePingpong-v0`).
 
