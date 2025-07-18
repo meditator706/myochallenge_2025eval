@@ -82,7 +82,7 @@ while not flat_completed:
     flag_trial = None # this flag will detect the end of an episode/trial
     ret = 0
 
-    print(f"MANI-MPL: Start Resetting the environment and get 1st obs of iter {trial}")
+    print(f"PINGPONG: Start Resetting the environment and get 1st obs of iter {trial}")
     
     obs = rc.reset()
 

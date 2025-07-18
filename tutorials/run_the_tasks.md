@@ -2,7 +2,7 @@
 This year's MyoChallenge consists of two independant tracks: Manipulation and locomotion.
 
 In order to create the environments, we can use OpenAI's gym interface, and import myosuite.
-It is required to install `myosuite==2.7.0` to run the tasks.
+It is required to install `myosuite==2.9.0` to run the tasks.
 
 Please note that the rewards given by the environments are NOT the final evaluation metrics, you have to find a good reward function by yourself. We refer to [evalai](https://eval.ai/web/challenges/challenge-page/2373/overview) for the evaluation details.
 
@@ -15,7 +15,7 @@ This code snippet runs the manipulation track environment with a random agent. W
 import gym
 import myosuite 
 
-env = gym.make('myoChallengeBimanual-v0')
+env = gym.make('myoChallengePingpong-v0')
 for ep in range(5):
     print(f'Episode: {ep} of 5')
     state = env.reset()
