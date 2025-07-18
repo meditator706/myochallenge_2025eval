@@ -2,22 +2,23 @@
 [![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://myosuite.slack.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/MyoSuite?style=social)](https://twitter.com/MyoSuite)
 
-# 2024 NeurIPS - MyoChallenge
+# 2025 NeurIPS - MyoChallenge
+
 
 <p align="center">
-  <img src='./images/myochallenges_reverse.png' alt="teaser results" width="75%"/>
+  <img width="1020" height="467" alt="image" src="https://github.com/user-attachments/assets/16362637-c84f-460c-a31f-94a6bc95613e" />
   <p align="center"><i>MyoChallenge Tasks</i></p>
 </p>
 
-Welcome to the [**2024 NeurIPS - MyoChallenge:  Physiological Dexterity and Agility in Bionic Humans**](https://sites.google.com/view/myosuite/myochallenge/myochallenge-2024).
+Welcome to the [**2025 NeurIPS - MyoChallenge: Towards Human Athletic Intelligence**](https://sites.google.com/view/myosuite/myochallenge/myochallenge-2025).
 
-This challenge consists of developing controllers for a physiologically realistic musculoskeletal models to solve dexterous manipulation and locomotion tasks:
+This challenge consists of developing controllers for a physiologically realistic musculoskeletal models to upper and lower limb atheltic tasks:
 
-- A) **Manipulation task** -- Interact with an object and relocate it (`myoChallengeBimanual-v0`).
+- A) **PingPong task** -- Successfully tally a incoming pingpong ball (`myoChallengePingpong-v0`).
 
-- B) **Locomotion task** -- Walk/Run over different terrain with a prosthetic leg (`myoChallengeOslRunRandom-v0`).
+- B) **Soccer task** -- Successfully control an agent to score a penalty/free kick (`myoChallengeSoccerP1-v0`).
 
-[⚠️ Important!] For Phase 2 environment, please upgrade to MyoSuite >= 2.8.0
+[⚠️ Important!] For Phase 1 environment, please upgrade to MyoSuite >= 2.9.0
 
 ## Overview
 This repository is primarily centered around the submission of your solution, but we also created documentation to help you with:
