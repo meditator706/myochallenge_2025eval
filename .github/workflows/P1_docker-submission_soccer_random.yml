@@ -34,7 +34,7 @@ jobs:
     
     - name: Build the Docker image
       run: |
-        docker compose -f docker-compose-LocoAgentRandom.yml build
+        docker compose -f docker-compose-SoccerAgentRandom.yml build
 
     - name: Push to evalai
       run: evalai push loco_agent_random:latest --phase myochallenge2025-soccerphase1-2628 --private
