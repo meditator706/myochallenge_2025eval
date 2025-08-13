@@ -1,4 +1,4 @@
-name: Docker Build Test - Mani
+name: Docker Build Test - TableTennis
 
 on: workflow_dispatch
 
@@ -33,7 +33,7 @@ jobs:
       run: evalai challenges --participant
     
     - name: Build the Docker image
-      run: docker compose -f docker-compose-ManiAgentRandom.yml build
+      run: docker compose -f docker-compose-TabletennisAgentRandom.yml build
 
 
 
