@@ -4,11 +4,11 @@ GreenBK='\033[1;42m'
 RedBK='\033[1;41m'
 RC='\033[0m'
 
-python environment/test_loco_environment.py &
+python environment/test_soccer_environment.py &
 
 # TO BE REPLACED WITH A DOCKER --> docker run myochallengeeval_loco_agent &
 
-python agent/agent_locoOSL_random.py
+python agent/agent_soccer_random.py
 
 if [ $? -eq 0 ]; then
     printf "${GreenBK}Chase Tag Agent script correctly connecting with the environment!${RC} \n"
