@@ -7,4 +7,4 @@ services:
       - docker/agent/docker.env
     build:
       context: ./
-      dockerfile: docker/agent/Dockerfile_AgentTableteenis_random
+      dockerfile: docker/agent/Dockerfile_AgentTabletennis_random
