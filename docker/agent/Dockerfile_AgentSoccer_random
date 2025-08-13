@@ -6,4 +6,4 @@ ADD ./utils /
 ADD requirements/agent_random.txt /
 RUN pip install --upgrade pip
 RUN pip install -r agent_random.txt
-CMD [ "python", "agent_locoOSL_random.py" ]
+CMD [ "python", "agent_soccer_random.py" ]
