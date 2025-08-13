@@ -10,7 +10,7 @@ import evaluation_pb2_grpc
 import grpc
 import gymnasium as gym
 
-from utils import LocoRemoteConnection
+from utils import RemoteConnection
 
 """
 Define your custom observation keys here
