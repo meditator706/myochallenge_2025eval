@@ -18,7 +18,7 @@ This challenge consists of developing controllers for a physiologically realisti
 
 - B) **Soccer task** -- Successfully control an agent to score a penalty/free kick (`myoChallengeSoccerP1-v0`).
 
-[⚠️ Important!] For Phase 1 environment, please upgrade to MyoSuite >= 2.9.0
+[⚠️ Important!] For Phase 1 environment, please upgrade to MyoSuite >= 2.10.0
 
 ## Overview
 This repository is primarily centered around the submission of your solution, but we also created documentation to help you with:
