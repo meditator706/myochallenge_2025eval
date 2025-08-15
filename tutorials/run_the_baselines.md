@@ -16,12 +16,12 @@ pip install tensorboard wandb
 Take a look [here](https://stable-baselines3.readthedocs.io/en/master/guide/install.html) if you run into issues.
 The requirements for the reflex-based baseline are contained in the above link.
 
-## Manipulation Track
+## Table Tennis Track
 This sb3-baseline allow the torso to stand up temporarily and hit the table tennis ball with ~ 5% success rate.
 
 A complete tutorial can be found here with a downloadable baseline [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jQFmID4mo7KnlpngMiuY98iYGmylQ3IZ?usp=sharing)
 
-## Locomotion track
+## Soccer track
 This deprl-baseline will try to stand around and slowly move across the quad.
 ``` python
 import gym
