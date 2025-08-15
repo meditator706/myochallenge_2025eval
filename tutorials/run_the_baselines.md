@@ -17,21 +17,9 @@ Take a look [here](https://stable-baselines3.readthedocs.io/en/master/guide/inst
 The requirements for the reflex-based baseline are contained in the above link.
 
 ## Manipulation Track
-This sb3-baseline will lift the cube upwards with the myoArm and grab it towards the MPL limb.
+This sb3-baseline allow the torso to stand up temporarily and hit the table tennis ball with ~ 5% success rate.
 
-First, get the commands to run sb3 locally, or download the weights locally from Google Drive by navigating to the [myosuite/agents](https://github.com/MyoHub/myosuite/tree/main/myosuite/agents) repository:
-```
-sh train_myosuite.sh myochal local sb3
-sh train_myosuite.sh myochal local sb3 baseline
-```
-
-You can now resume training from a previous checkpoint by adding +job_name=checkpoint.pt to the command line.
-```
-python hydra_sb3_launcher.py --config-path config --config-name hydra_myochal_sb3_ppo_config.yaml env=myoChallengeBimanual-v0 job_name=checkpoint.pt
-```
-
-A complete tutorial can be found here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AqC1Y7NkRnb2R1MgjT3n4u02EmSPem88?usp=sharing)
-
+A complete tutorial can be found here with a downloadable baseline [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jQFmID4mo7KnlpngMiuY98iYGmylQ3IZ?usp=sharing)
 
 ## Locomotion track
 This deprl-baseline will try to stand around and slowly move across the quad.
