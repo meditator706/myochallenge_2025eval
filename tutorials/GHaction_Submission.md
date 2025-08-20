@@ -15,12 +15,12 @@ You can also follow the instructions here: [![Open In Colab](https://colab.resea
 
 ### On the eval-ai website
 - [Create an account for eval-ai and a team](https://evalai.readthedocs.io/en/latest/participate.html)
-- Head to the MyoChallenge2024 and click on participate. You can now see in the participate area (or in your evalai account settings) your `personal token`. This token will be needed so that the github repo can submit solutions in your name.
+- Head to the MyoChallenge2025 and click on participate. You can now see in the participate area (or in your evalai account settings) your `personal token`. This token will be needed so that the github repo can submit solutions in your name.
 
 ![MyoChal_EvalAI_setup](../images/MyoChal_EvalAI_setup.png)
 
 ### Clone this repo
-In order for your code to stay private, you can [create a repository from our template](https://github.com/new?template_name=myochallenge_2024eval&template_owner=MyoHub) by looking at the top of this repository and click on "Use this template" -> "Create your own repository" and then choosing the private option.
+In order for your code to stay private, you can [create a repository from our template](https://github.com/new?template_name=myochallenge_2025eval&template_owner=MyoHub) by looking at the top of this repository and click on "Use this template" -> "Create your own repository" and then choosing the private option.
 
   | ![MyoChal_CreateTemplate](../images/MyoChal_CreateTemplate.png) |
   |-|
@@ -34,14 +34,14 @@ Navigate to the new personal github repository that you created from the templat
   |-|-|
   Navigate to repository secret page | Enter your EvalAI access token here
 
-- click on "Actions" in the top-bar of your repo, and you will see the github-actions we prepared. You can use "Docker Build Test" [Loco](https://github.com/MyoHub/myochallenge_2024eval/actions/workflows/docker-build_loco.yml) or [Mani](https://github.com/MyoHub/myochallenge_2024eval/actions/workflows/docker-build_mani.yml) to test building docker containers for random agents.
+- click on "Actions" in the top-bar of your repo, and you will see the github-actions we prepared. You can use "Docker Build Test" [Soccer](https://github.com/MyoHub/myochallenge_2025eval/actions/workflows/docker-build_soccer.yml) or [TableTennis](https://github.com/MyoHub/myochallenge_2025eval/actions/workflows/docker-build_tabletennis.yml) to test building docker containers for random agents.
 
   | ![MyoChal_Submit_Workflow_1](../images/MyoChal_Submit_Workflow_1.png) |
   |-|
 
 
-- If you want to submit something, you can use "Submission Loco Deprl" or similar for Mani and for random agents. Try clicking on one of them and then on "Run workflow" on the right. This should show up as a private submission in your evalai leaderboard.
+- If you want to submit something, you can use "P1 Submission TableTennis Random" or similar for tabletennis and for random agents. Try clicking on one of them and then on "Run workflow" on the right. This should show up as a private submission in your evalai leaderboard.
 
-You can then edit the prepared files for [deprl](https://github.com/MyoHub/myochallenge_2024eval/blob/main/agent/agent_loco_deprl.py) or [random](https://github.com/MyoHub/myochallenge_2024eval/blob/main/agent/agent_loco_random.py) agents and use them to import your own policies. They also contain other helpful functions.
+You can then edit the prepared files for [random](https://github.com/MyoHub/myochallenge_2025eval/blob/main/agent/agent_soccer_random.py) agents and use them to import your own policies. They also contain other helpful functions.
 
 Pushing your changes and policies to the `main` branch will allow to submit them via the github actions. For local development, we recommend to follow the DIY submission [instructions](./DIY_Submission.md).
