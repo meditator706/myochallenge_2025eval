@@ -14,7 +14,7 @@ Welcome to the [**2025 NeurIPS - MyoChallenge: Towards Human Athletic Intelligen
 
 This challenge consists of developing controllers for a physiologically realistic musculoskeletal model to achieve upper and lower limb athletic tasks:
 
-- A) **PingPong task** -- Successfully tally a incoming pingpong ball (`myoChallengePingpong-v0`).
+- A) **PingPong task** -- Successfully tally a incoming pingpong ball (`myoChallengeTableTennisP1-v0`).
 
 - B) **Soccer task** -- Successfully control an agent to score a penalty/free kick (`myoChallengeSoccerP1-v0`).
 
@@ -31,8 +31,8 @@ This repository is primarily centered around the submission of your solution, bu
 ### Github actions 
 (detailed description [here](./tutorials/GHaction_Submission.md))
 1. [Register an account on Eval-AI](https://evalai.readthedocs.io/en/latest/participate.html) and obtain a `personal token` (on profile page -> "Get your Auth Token")
-2. [Clone this template](https://github.com/new?template_name=myoChallenge2024Eval&template_owner=MyoHub) and add the eval-ai `personal token` as "EvalAI_token" (in "Settings" -> "Secrets and variables" -> "Actions" -> "New repository secret")
-3. Trigger subission by selecting "Run workflow" in the ["Submission Loco Random" Action](https://github.com/MyoHub/myoChallenge2024Eval/actions/workflows/P2_docker-submission_loco_random.yml)
+2. [Clone this template](https://github.com/new?template_name=myoChallenge2025eval&template_owner=MyoHub) and add the eval-ai `personal token` as "EvalAI_token" (in "Settings" -> "Secrets and variables" -> "Actions" -> "New repository secret")
+3. Trigger subission by selecting "Run workflow" in the ["Submission Loco Random" Action](https://github.com/MyoHub/myoChallenge2025eval/actions/workflows/P2_docker-submission_loco_random.yml)
 
 To customize your solution, please follow the [steps listed below](#step-by-step) below.
 
@@ -48,10 +48,10 @@ This solution requires to setup the project locally and compile docker container
 sh ./test/test_mani_agent.sh
 
 # Step 3: Build the docker container
-docker build -f docker/agent/Dockerfile_Mani . -t myochallengeeval_mani_agent
+docker build -f docker/agent/Dockerfile_Tabletennis . -t myochallengeeval_mani_agent
 
 # Step 4: Upload your policy
-evalai push myochallengeeval_mani_agent:latest --phase myochallenge2024-maniphase2-2373 --public
+evalai push myochallengeeval_mani_agent:latest --phase myochallenge2025-XXXX1-XXX --public
 
 ```
 
