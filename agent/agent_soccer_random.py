@@ -61,9 +61,9 @@ time.sleep(60) # DO NOT REMOVE. Required for EvalAI processing
 LOCAL_EVALUATION = os.environ.get("LOCAL_EVALUATION")
 
 if LOCAL_EVALUATION:
-    rc = RemoteConnection("environment:8085")
+    rc = RemoteConnection("environment:8086")
 else:
-    rc = RemoteConnection("localhost:8085")
+    rc = RemoteConnection("localhost:8086")
 
 policy = Policy(rc)
 
