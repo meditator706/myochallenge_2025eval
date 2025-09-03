@@ -20,12 +20,14 @@ custom_obs_keys = [
     'internal_qvel',
     'grf',
     'torso_angle',
-    'ball_pos',
+    'pelvis_angle',
     'model_root_pos',
     'model_root_vel',
     'muscle_length',
     'muscle_velocity',
     'muscle_force',
+    'ball_pos',
+    'goal_bounds',
 ]
 
 def pack_for_grpc(entity):
@@ -78,7 +80,7 @@ while not flat_completed:
 
     print(f"Soccer: Start Resetting the environment and get 1st obs of iter {trial}")
     
-    obs = rc.reset(osl_dict)
+    obs = rc.reset()
     obs = get_custom_observation(rc, custom_obs_keys)
 
     print(f"Trial: {trial}, flat_completed: {flat_completed}")
