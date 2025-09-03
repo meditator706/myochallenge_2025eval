@@ -34,7 +34,7 @@ class evaluator_environment:
     ]
     DEFAULT_NORMALIZE_ACT = True
 
-    def __init__(self, environment="myoChallengeOslRunFixed-v0"):
+    def __init__(self, environment="myoChallengeSoccerP1-v0"):
         self.score = 0
         self.feedback = None
 
@@ -63,8 +63,8 @@ class evaluator_environment:
                             obs_keys=self.obs_output_keys, 
                             normalize_act=self.normalize_act)
 
-    def reset(self, reset_dict=None):
-        return self.env.reset(OSL_params=reset_dict)
+    def reset(self):
+        return self.env.reset()
 
     def get_action_space(self):
         return len(self.env.action_space.sample())
@@ -77,9 +77,6 @@ class evaluator_environment:
 
     def next_score(self):
         self.score += 1
-
-    def change_osl_mode(self, mode):
-        self.env.change_osl_mode(mode=mode)
 
 
 class Environment(evaluation_pb2_grpc.EnvironmentServicer):
@@ -107,7 +104,7 @@ class Environment(evaluation_pb2_grpc.EnvironmentServicer):
         self.score = 0
         self.iter = 0
         self.repetition += 1
-        message = pack_for_grpc(env.reset(reset_dict=reset_dict))
+        message = pack_for_grpc(env.reset())
         env.feedback = []
         return evaluation_pb2.Package(SerializedEntity=message)
 
@@ -123,11 +120,11 @@ class Environment(evaluation_pb2_grpc.EnvironmentServicer):
         message = pack_for_grpc(env.get_obsdict())
         return evaluation_pb2.Package(SerializedEntity=message)
 
-    def change_osl_mode(self, request, context):
-        mode = unpack_for_grpc(request.SerializedEntity)
-        env.env.change_osl_mode(mode=mode[0])
-        message = pack_for_grpc({"feedback": True,})
-        return evaluation_pb2.Package(SerializedEntity=message)
+    # def change_osl_mode(self, request, context):
+    #     mode = unpack_for_grpc(request.SerializedEntity)
+    #     env.env.change_osl_mode(mode=mode[0])
+    #     message = pack_for_grpc({"feedback": True,})
+    #     return evaluation_pb2.Package(SerializedEntity=message)
 
     def act_on_environment(self, request, context):
         global EVALUATION_COMPLETED
