@@ -83,7 +83,7 @@ while not flat_completed:
 
     print(f"PINGPONG: Start Resetting the environment and get 1st obs of iter {trial}")
     
-    obs = rc.reset()
+    obs,_ = rc.reset()
 
     print(f"Trial: {trial}, flat_completed: {flat_completed}")
     counter = 0
