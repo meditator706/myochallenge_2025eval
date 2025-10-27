@@ -1,0 +1,16 @@
+FROM python:3.10-slim-buster
+
+ENV PYTHONUNBUFFERED 1
+
+# Add agent files
+ADD ./agent /
+ADD ./utils /
+ADD requirements/agent_ppo.txt /
+
+# Upgrade pip and install dependencies
+RUN pip install --upgrade pip
+RUN pip install -r agent_ppo.txt
+
+# Run the PPO agent
+CMD [ "python", "agent_tabletennis_ppo.py" ]
+

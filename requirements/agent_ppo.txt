@@ -1,0 +1,11 @@
+grpcio==1.48.0
+protobuf==3.20.1
+gymnasium==0.29.1
+numpy==1.24.3
+jax==0.4.20
+jaxlib==0.4.20
+flax==0.8.0
+optax==0.1.7
+tensorflow-probability==0.22.0
+myosuite==2.6.0
+
